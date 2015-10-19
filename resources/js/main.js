@@ -1,11 +1,3 @@
-//TweenMax.to(".drone", 6, {x:600});
-//TweenMax.to(".drone", 2, {x:800, ease:Bounce.easeOut});
-//TweenMax.from(".drone", 0.5, {opacity:0, scale:0, ease:Bounce.easeOut});
-//TweenMax.staggerFrom(".box", 0.5, {opacity:0, y:200, delay:0.5}, 0.2);
-//Fade everything after animation
-//TweenMax.to(".drone, .box", 0.5, {opacity:0, delay:2});
-
-
 //Working with TimelineLite to prevent using delay
 var tl = new TimelineLite(),
     restart = document.getElementById("restart"),
@@ -22,7 +14,6 @@ tl.from(".drone", 0.5, {opacity:0, scale:0, ease:Bounce.easeOut})
   //.to(".drone, .box", 0.5, {opacity:0});
 
 //then later, control the whole thing...
-
 restart.onclick = function() {
     tl.restart();
 };
